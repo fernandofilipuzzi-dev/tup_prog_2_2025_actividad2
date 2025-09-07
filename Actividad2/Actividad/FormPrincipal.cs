@@ -120,6 +120,7 @@ public partial class FormPrincipal : Form
             }
             fIncidentes.tbIncidentes.Text += $"\r\n-----------------------";
         }
+        else
         {
             fIncidentes.tbIncidentes.Text += $"No se han registrado incidentes.";
         }
