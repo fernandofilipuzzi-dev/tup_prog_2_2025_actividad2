@@ -4,7 +4,7 @@ namespace Actividad2;
 
 public partial class FormPrincipal : Form
 {
-    Comisaria destacamento=new Comisaria();
+    Comisaria destacamento;
 
     public FormPrincipal()
     {
@@ -52,11 +52,12 @@ public partial class FormPrincipal : Form
             nupNumeroGuardia.Value = -1;
             nupHGuardiaDesde.Value = 0;
             nupMGuardiaDesde.Value = 0;
+            btnListrarIncidentes.Enabled = true;
             #endregion
         }
         else
         {
-            MessageBox.Show("Debe seleccionar un guardia");
+            MessageBox.Show("Debe seleccionar un agente");
         }
     }
 
@@ -65,7 +66,7 @@ public partial class FormPrincipal : Form
         Close();
     }
 
-    private void btnRegistrarDenuncia_Click(object sender, EventArgs e)
+    private void btnRegistrarIncidente_Click(object sender, EventArgs e)
     {
         if (cmbNumeroPlaca.SelectedItem != null && cbxIncidente.SelectedItem!=null)
         {
@@ -107,15 +108,21 @@ public partial class FormPrincipal : Form
     {
         FormVerInicidentes fIncidentes=new FormVerInicidentes();
 
-        for (int idx = 0; idx < destacamento.CantidadIncidentes; idx++)
+        if (destacamento!=null && destacamento.CantidadIncidentes > 0)
         {
-            fIncidentes.tbIncidentes.Text += $"\r\n--{idx + 1}---------------------\r\n";
+            for (int idx = 0; idx < destacamento.CantidadIncidentes; idx++)
+            {
+                fIncidentes.tbIncidentes.Text += $"\r\n--{idx + 1}---------------------\r\n";
 
-            Incidente inc = destacamento.VerIncidente(idx);
+                Incidente inc = destacamento.VerIncidente(idx);
 
-            fIncidentes.tbIncidentes.Text += inc.VerDescripcion();
+                fIncidentes.tbIncidentes.Text += inc.VerDescripcion();
+            }
+            fIncidentes.tbIncidentes.Text += $"\r\n-----------------------";
         }
-        fIncidentes.tbIncidentes.Text += $"\r\n-----------------------";
+        {
+            fIncidentes.tbIncidentes.Text += $"No se han registrado incidentes.";
+        }
 
         fIncidentes.ShowDialog();
     }

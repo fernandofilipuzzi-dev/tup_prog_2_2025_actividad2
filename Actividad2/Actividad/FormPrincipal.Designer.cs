@@ -28,392 +28,363 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAltaComisaria = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnListrarIncidentes = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.gbAdministracion = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbxIncidente = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tbNombre = new System.Windows.Forms.TextBox();
-            this.tbDNI = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbMotivo = new System.Windows.Forms.TextBox();
-            this.btnRegistrarIncidente = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.nupMIncidente = new System.Windows.Forms.NumericUpDown();
-            this.nupHIncidente = new System.Windows.Forms.NumericUpDown();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.nupNumeroGuardia = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnAginacionGuardias = new System.Windows.Forms.Button();
-            this.nupMDuracion = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.nupHGuardiaDesde = new System.Windows.Forms.NumericUpDown();
-            this.nupMGuardiaDesde = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbNumeroPlaca = new System.Windows.Forms.ComboBox();
-            this.groupBox1.SuspendLayout();
-            this.gbAdministracion.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nupMIncidente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupHIncidente)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nupNumeroGuardia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupMDuracion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupHGuardiaDesde)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupMGuardiaDesde)).BeginInit();
-            this.SuspendLayout();
+            btnAltaComisaria = new Button();
+            btnCerrar = new Button();
+            btnListrarIncidentes = new Button();
+            groupBox1 = new GroupBox();
+            gbAdministracion = new GroupBox();
+            groupBox5 = new GroupBox();
+            label9 = new Label();
+            cbxIncidente = new ComboBox();
+            label8 = new Label();
+            label7 = new Label();
+            tbNombre = new TextBox();
+            tbDNI = new TextBox();
+            label5 = new Label();
+            tbMotivo = new TextBox();
+            btnRegistrarIncidente = new Button();
+            label6 = new Label();
+            nupMIncidente = new NumericUpDown();
+            nupHIncidente = new NumericUpDown();
+            groupBox3 = new GroupBox();
+            nupNumeroGuardia = new NumericUpDown();
+            label4 = new Label();
+            label2 = new Label();
+            btnAginacionGuardias = new Button();
+            nupMDuracion = new NumericUpDown();
+            label3 = new Label();
+            nupHGuardiaDesde = new NumericUpDown();
+            nupMGuardiaDesde = new NumericUpDown();
+            label1 = new Label();
+            cmbNumeroPlaca = new ComboBox();
+            groupBox1.SuspendLayout();
+            gbAdministracion.SuspendLayout();
+            groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nupMIncidente).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nupHIncidente).BeginInit();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nupNumeroGuardia).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nupMDuracion).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nupHGuardiaDesde).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nupMGuardiaDesde).BeginInit();
+            SuspendLayout();
             // 
             // btnAltaComisaria
             // 
-            this.btnAltaComisaria.Location = new System.Drawing.Point(359, 25);
-            this.btnAltaComisaria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAltaComisaria.Name = "btnAltaComisaria";
-            this.btnAltaComisaria.Size = new System.Drawing.Size(132, 52);
-            this.btnAltaComisaria.TabIndex = 0;
-            this.btnAltaComisaria.Text = "Creación comisaría(1)";
-            this.btnAltaComisaria.UseVisualStyleBackColor = true;
-            this.btnAltaComisaria.Click += new System.EventHandler(this.btnAltaComisaria_Click);
+            btnAltaComisaria.Location = new Point(359, 25);
+            btnAltaComisaria.Margin = new Padding(4, 5, 4, 5);
+            btnAltaComisaria.Name = "btnAltaComisaria";
+            btnAltaComisaria.Size = new Size(132, 52);
+            btnAltaComisaria.TabIndex = 0;
+            btnAltaComisaria.Text = "Creación comisaría(1)";
+            btnAltaComisaria.UseVisualStyleBackColor = true;
+            btnAltaComisaria.Click += btnAltaComisaria_Click;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(264, 578);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(133, 52);
-            this.btnCerrar.TabIndex = 14;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            btnCerrar.Location = new Point(264, 566);
+            btnCerrar.Margin = new Padding(4, 5, 4, 5);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(133, 52);
+            btnCerrar.TabIndex = 14;
+            btnCerrar.Text = "Cerrar";
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // btnListrarIncidentes
             // 
-            this.btnListrarIncidentes.Location = new System.Drawing.Point(499, 25);
-            this.btnListrarIncidentes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnListrarIncidentes.Name = "btnListrarIncidentes";
-            this.btnListrarIncidentes.Size = new System.Drawing.Size(132, 52);
-            this.btnListrarIncidentes.TabIndex = 1;
-            this.btnListrarIncidentes.Text = "Listar incidentes(4)";
-            this.btnListrarIncidentes.UseVisualStyleBackColor = true;
-            this.btnListrarIncidentes.Click += new System.EventHandler(this.btnListrarIncidentes_Click);
+            btnListrarIncidentes.Enabled = false;
+            btnListrarIncidentes.Location = new Point(499, 25);
+            btnListrarIncidentes.Margin = new Padding(4, 5, 4, 5);
+            btnListrarIncidentes.Name = "btnListrarIncidentes";
+            btnListrarIncidentes.Size = new Size(132, 52);
+            btnListrarIncidentes.TabIndex = 1;
+            btnListrarIncidentes.Text = "Listar incidentes(4)";
+            btnListrarIncidentes.UseVisualStyleBackColor = true;
+            btnListrarIncidentes.Click += btnListrarIncidentes_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnAltaComisaria);
-            this.groupBox1.Controls.Add(this.btnListrarIncidentes);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(650, 85);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Administracion comisaría";
+            groupBox1.Controls.Add(btnAltaComisaria);
+            groupBox1.Controls.Add(btnListrarIncidentes);
+            groupBox1.Location = new Point(12, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(650, 85);
+            groupBox1.TabIndex = 7;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Administracion comisaría";
             // 
             // gbAdministracion
             // 
-            this.gbAdministracion.Controls.Add(this.groupBox5);
-            this.gbAdministracion.Controls.Add(this.groupBox3);
-            this.gbAdministracion.Controls.Add(this.label1);
-            this.gbAdministracion.Controls.Add(this.cmbNumeroPlaca);
-            this.gbAdministracion.Enabled = false;
-            this.gbAdministracion.Location = new System.Drawing.Point(12, 103);
-            this.gbAdministracion.Name = "gbAdministracion";
-            this.gbAdministracion.Size = new System.Drawing.Size(650, 467);
-            this.gbAdministracion.TabIndex = 8;
-            this.gbAdministracion.TabStop = false;
-            this.gbAdministracion.Text = "Operaciones sobre el agente";
+            gbAdministracion.Controls.Add(groupBox5);
+            gbAdministracion.Controls.Add(groupBox3);
+            gbAdministracion.Controls.Add(label1);
+            gbAdministracion.Controls.Add(cmbNumeroPlaca);
+            gbAdministracion.Enabled = false;
+            gbAdministracion.Location = new Point(12, 103);
+            gbAdministracion.Name = "gbAdministracion";
+            gbAdministracion.Size = new Size(650, 455);
+            gbAdministracion.TabIndex = 8;
+            gbAdministracion.TabStop = false;
+            gbAdministracion.Text = "Operaciones sobre el agente";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label9);
-            this.groupBox5.Controls.Add(this.cbxIncidente);
-            this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.tbNombre);
-            this.groupBox5.Controls.Add(this.tbDNI);
-            this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.tbMotivo);
-            this.groupBox5.Controls.Add(this.btnRegistrarIncidente);
-            this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Controls.Add(this.nupMIncidente);
-            this.groupBox5.Controls.Add(this.nupHIncidente);
-            this.groupBox5.Location = new System.Drawing.Point(21, 212);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(612, 233);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Administración de incidentes";
+            groupBox5.Controls.Add(label9);
+            groupBox5.Controls.Add(cbxIncidente);
+            groupBox5.Controls.Add(label8);
+            groupBox5.Controls.Add(label7);
+            groupBox5.Controls.Add(tbNombre);
+            groupBox5.Controls.Add(tbDNI);
+            groupBox5.Controls.Add(label5);
+            groupBox5.Controls.Add(tbMotivo);
+            groupBox5.Controls.Add(btnRegistrarIncidente);
+            groupBox5.Controls.Add(label6);
+            groupBox5.Controls.Add(nupMIncidente);
+            groupBox5.Controls.Add(nupHIncidente);
+            groupBox5.Location = new Point(21, 212);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(612, 233);
+            groupBox5.TabIndex = 4;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Administración de incidentes";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 30);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 20);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Tipo Incidente";
+            label9.AutoSize = true;
+            label9.Location = new Point(20, 30);
+            label9.Name = "label9";
+            label9.Size = new Size(109, 20);
+            label9.TabIndex = 18;
+            label9.Text = "Tipo Incidente";
             // 
             // cbxIncidente
             // 
-            this.cbxIncidente.FormattingEnabled = true;
-            this.cbxIncidente.Items.AddRange(new object[] {
-            "Denuncia",
-            "Arresto"});
-            this.cbxIncidente.Location = new System.Drawing.Point(157, 27);
-            this.cbxIncidente.Name = "cbxIncidente";
-            this.cbxIncidente.Size = new System.Drawing.Size(121, 28);
-            this.cbxIncidente.TabIndex = 5;
+            cbxIncidente.FormattingEnabled = true;
+            cbxIncidente.Items.AddRange(new object[] { "Denuncia", "Arresto" });
+            cbxIncidente.Location = new Point(157, 27);
+            cbxIncidente.Name = "cbxIncidente";
+            cbxIncidente.Size = new Size(121, 28);
+            cbxIncidente.TabIndex = 5;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(321, 113);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 20);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "DNI";
+            label8.AutoSize = true;
+            label8.Location = new Point(321, 113);
+            label8.Name = "label8";
+            label8.Size = new Size(37, 20);
+            label8.TabIndex = 16;
+            label8.Text = "DNI";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(63, 116);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 20);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Persona";
+            label7.AutoSize = true;
+            label7.Location = new Point(63, 116);
+            label7.Name = "label7";
+            label7.Size = new Size(68, 20);
+            label7.TabIndex = 15;
+            label7.Text = "Persona";
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(157, 110);
-            this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(158, 26);
-            this.tbNombre.TabIndex = 8;
+            tbNombre.Location = new Point(157, 110);
+            tbNombre.Name = "tbNombre";
+            tbNombre.Size = new Size(158, 26);
+            tbNombre.TabIndex = 8;
             // 
             // tbDNI
             // 
-            this.tbDNI.Location = new System.Drawing.Point(364, 110);
-            this.tbDNI.Name = "tbDNI";
-            this.tbDNI.Size = new System.Drawing.Size(96, 26);
-            this.tbDNI.TabIndex = 9;
+            tbDNI.Location = new Point(364, 110);
+            tbDNI.Name = "tbDNI";
+            tbDNI.Size = new Size(96, 26);
+            tbDNI.TabIndex = 9;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(70, 164);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 20);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Motivo:";
+            label5.AutoSize = true;
+            label5.Location = new Point(70, 164);
+            label5.Name = "label5";
+            label5.Size = new Size(59, 20);
+            label5.TabIndex = 12;
+            label5.Text = "Motivo:";
             // 
             // tbMotivo
             // 
-            this.tbMotivo.Location = new System.Drawing.Point(157, 145);
-            this.tbMotivo.Multiline = true;
-            this.tbMotivo.Name = "tbMotivo";
-            this.tbMotivo.Size = new System.Drawing.Size(303, 66);
-            this.tbMotivo.TabIndex = 10;
+            tbMotivo.Location = new Point(157, 145);
+            tbMotivo.Multiline = true;
+            tbMotivo.Name = "tbMotivo";
+            tbMotivo.Size = new Size(303, 66);
+            tbMotivo.TabIndex = 10;
             // 
             // btnRegistrarIncidente
             // 
-            this.btnRegistrarIncidente.Location = new System.Drawing.Point(478, 160);
-            this.btnRegistrarIncidente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnRegistrarIncidente.Name = "btnRegistrarIncidente";
-            this.btnRegistrarIncidente.Size = new System.Drawing.Size(106, 51);
-            this.btnRegistrarIncidente.TabIndex = 11;
-            this.btnRegistrarIncidente.Text = "Registrar Indicente(3)";
-            this.btnRegistrarIncidente.UseVisualStyleBackColor = true;
-            this.btnRegistrarIncidente.Click += new System.EventHandler(this.btnRegistrarDenuncia_Click);
+            btnRegistrarIncidente.Location = new Point(478, 160);
+            btnRegistrarIncidente.Margin = new Padding(4, 5, 4, 5);
+            btnRegistrarIncidente.Name = "btnRegistrarIncidente";
+            btnRegistrarIncidente.Size = new Size(106, 51);
+            btnRegistrarIncidente.TabIndex = 11;
+            btnRegistrarIncidente.Text = "Registrar Indicente(3)";
+            btnRegistrarIncidente.UseVisualStyleBackColor = true;
+            btnRegistrarIncidente.Click += btnRegistrarIncidente_Click;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(75, 74);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 20);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Hora";
+            label6.AutoSize = true;
+            label6.Location = new Point(75, 74);
+            label6.Name = "label6";
+            label6.Size = new Size(44, 20);
+            label6.TabIndex = 9;
+            label6.Text = "Hora";
             // 
             // nupMIncidente
             // 
-            this.nupMIncidente.Location = new System.Drawing.Point(231, 72);
-            this.nupMIncidente.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.nupMIncidente.Name = "nupMIncidente";
-            this.nupMIncidente.Size = new System.Drawing.Size(59, 26);
-            this.nupMIncidente.TabIndex = 7;
+            nupMIncidente.Location = new Point(231, 72);
+            nupMIncidente.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
+            nupMIncidente.Name = "nupMIncidente";
+            nupMIncidente.Size = new Size(59, 26);
+            nupMIncidente.TabIndex = 7;
             // 
             // nupHIncidente
             // 
-            this.nupHIncidente.Location = new System.Drawing.Point(157, 72);
-            this.nupHIncidente.Maximum = new decimal(new int[] {
-            23,
-            0,
-            0,
-            0});
-            this.nupHIncidente.Name = "nupHIncidente";
-            this.nupHIncidente.Size = new System.Drawing.Size(62, 26);
-            this.nupHIncidente.TabIndex = 6;
+            nupHIncidente.Location = new Point(157, 72);
+            nupHIncidente.Maximum = new decimal(new int[] { 23, 0, 0, 0 });
+            nupHIncidente.Name = "nupHIncidente";
+            nupHIncidente.Size = new Size(62, 26);
+            nupHIncidente.TabIndex = 6;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.nupNumeroGuardia);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.btnAginacionGuardias);
-            this.groupBox3.Controls.Add(this.nupMDuracion);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.nupHGuardiaDesde);
-            this.groupBox3.Controls.Add(this.nupMGuardiaDesde);
-            this.groupBox3.Location = new System.Drawing.Point(21, 74);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(612, 132);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Administración de guardias";
+            groupBox3.Controls.Add(nupNumeroGuardia);
+            groupBox3.Controls.Add(label4);
+            groupBox3.Controls.Add(label2);
+            groupBox3.Controls.Add(btnAginacionGuardias);
+            groupBox3.Controls.Add(nupMDuracion);
+            groupBox3.Controls.Add(label3);
+            groupBox3.Controls.Add(nupHGuardiaDesde);
+            groupBox3.Controls.Add(nupMGuardiaDesde);
+            groupBox3.Location = new Point(21, 74);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(612, 132);
+            groupBox3.TabIndex = 3;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Administración de guardias";
             // 
             // nupNumeroGuardia
             // 
-            this.nupNumeroGuardia.Location = new System.Drawing.Point(157, 25);
-            this.nupNumeroGuardia.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nupNumeroGuardia.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.nupNumeroGuardia.Name = "nupNumeroGuardia";
-            this.nupNumeroGuardia.Size = new System.Drawing.Size(133, 26);
-            this.nupNumeroGuardia.TabIndex = 1;
+            nupNumeroGuardia.Location = new Point(157, 25);
+            nupNumeroGuardia.Maximum = new decimal(new int[] { 1, 0, 0, 0 });
+            nupNumeroGuardia.Minimum = new decimal(new int[] { 1, 0, 0, int.MinValue });
+            nupNumeroGuardia.Name = "nupNumeroGuardia";
+            nupNumeroGuardia.Size = new Size(133, 26);
+            nupNumeroGuardia.TabIndex = 1;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Duracion en M";
+            label4.AutoSize = true;
+            label4.Location = new Point(19, 91);
+            label4.Name = "label4";
+            label4.Size = new Size(112, 20);
+            label4.TabIndex = 10;
+            label4.Text = "Duracion en M";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Nro Guardia";
+            label2.AutoSize = true;
+            label2.Location = new Point(36, 27);
+            label2.Name = "label2";
+            label2.Size = new Size(95, 20);
+            label2.TabIndex = 6;
+            label2.Text = "Nro Guardia";
             // 
             // btnAginacionGuardias
             // 
-            this.btnAginacionGuardias.Location = new System.Drawing.Point(452, 43);
-            this.btnAginacionGuardias.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAginacionGuardias.Name = "btnAginacionGuardias";
-            this.btnAginacionGuardias.Size = new System.Drawing.Size(132, 52);
-            this.btnAginacionGuardias.TabIndex = 5;
-            this.btnAginacionGuardias.Text = "Asignación de las guardias(2)";
-            this.btnAginacionGuardias.UseVisualStyleBackColor = true;
-            this.btnAginacionGuardias.Click += new System.EventHandler(this.btnAsignarGuardias_Click);
+            btnAginacionGuardias.Location = new Point(452, 43);
+            btnAginacionGuardias.Margin = new Padding(4, 5, 4, 5);
+            btnAginacionGuardias.Name = "btnAginacionGuardias";
+            btnAginacionGuardias.Size = new Size(132, 52);
+            btnAginacionGuardias.TabIndex = 5;
+            btnAginacionGuardias.Text = "Asignación de las guardias(2)";
+            btnAginacionGuardias.UseVisualStyleBackColor = true;
+            btnAginacionGuardias.Click += btnAsignarGuardias_Click;
             // 
             // nupMDuracion
             // 
-            this.nupMDuracion.Location = new System.Drawing.Point(157, 91);
-            this.nupMDuracion.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.nupMDuracion.Name = "nupMDuracion";
-            this.nupMDuracion.Size = new System.Drawing.Size(133, 26);
-            this.nupMDuracion.TabIndex = 4;
+            nupMDuracion.Location = new Point(157, 91);
+            nupMDuracion.Maximum = new decimal(new int[] { 1200, 0, 0, 0 });
+            nupMDuracion.Name = "nupMDuracion";
+            nupMDuracion.Size = new Size(133, 26);
+            nupMDuracion.TabIndex = 4;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(75, 57);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Desde";
+            label3.AutoSize = true;
+            label3.Location = new Point(75, 57);
+            label3.Name = "label3";
+            label3.Size = new Size(56, 20);
+            label3.TabIndex = 9;
+            label3.Text = "Desde";
             // 
             // nupHGuardiaDesde
             // 
-            this.nupHGuardiaDesde.Location = new System.Drawing.Point(157, 57);
-            this.nupHGuardiaDesde.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.nupHGuardiaDesde.Name = "nupHGuardiaDesde";
-            this.nupHGuardiaDesde.Size = new System.Drawing.Size(62, 26);
-            this.nupHGuardiaDesde.TabIndex = 2;
+            nupHGuardiaDesde.Location = new Point(157, 57);
+            nupHGuardiaDesde.Maximum = new decimal(new int[] { 24, 0, 0, 0 });
+            nupHGuardiaDesde.Name = "nupHGuardiaDesde";
+            nupHGuardiaDesde.Size = new Size(62, 26);
+            nupHGuardiaDesde.TabIndex = 2;
             // 
             // nupMGuardiaDesde
             // 
-            this.nupMGuardiaDesde.Location = new System.Drawing.Point(231, 57);
-            this.nupMGuardiaDesde.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.nupMGuardiaDesde.Name = "nupMGuardiaDesde";
-            this.nupMGuardiaDesde.Size = new System.Drawing.Size(59, 26);
-            this.nupMGuardiaDesde.TabIndex = 3;
+            nupMGuardiaDesde.Location = new Point(231, 57);
+            nupMGuardiaDesde.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
+            nupMGuardiaDesde.Name = "nupMGuardiaDesde";
+            nupMGuardiaDesde.Size = new Size(59, 26);
+            nupMGuardiaDesde.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Placa de Agente";
+            label1.AutoSize = true;
+            label1.Location = new Point(17, 35);
+            label1.Name = "label1";
+            label1.Size = new Size(126, 20);
+            label1.TabIndex = 5;
+            label1.Text = "Placa de Agente";
             // 
             // cmbNumeroPlaca
             // 
-            this.cmbNumeroPlaca.FormattingEnabled = true;
-            this.cmbNumeroPlaca.Location = new System.Drawing.Point(149, 27);
-            this.cmbNumeroPlaca.Name = "cmbNumeroPlaca";
-            this.cmbNumeroPlaca.Size = new System.Drawing.Size(133, 28);
-            this.cmbNumeroPlaca.TabIndex = 2;
+            cmbNumeroPlaca.FormattingEnabled = true;
+            cmbNumeroPlaca.Location = new Point(149, 27);
+            cmbNumeroPlaca.Name = "cmbNumeroPlaca";
+            cmbNumeroPlaca.Size = new Size(133, 28);
+            cmbNumeroPlaca.TabIndex = 2;
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 634);
-            this.Controls.Add(this.gbAdministracion);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnCerrar);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "FormPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Actividad 2 - \"Ana es policia!\"";
-            this.groupBox1.ResumeLayout(false);
-            this.gbAdministracion.ResumeLayout(false);
-            this.gbAdministracion.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nupMIncidente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupHIncidente)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nupNumeroGuardia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupMDuracion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupHGuardiaDesde)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupMGuardiaDesde)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(677, 631);
+            Controls.Add(gbAdministracion);
+            Controls.Add(groupBox1);
+            Controls.Add(btnCerrar);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "FormPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Actividad 2 - \"Ana es policia!\"";
+            groupBox1.ResumeLayout(false);
+            gbAdministracion.ResumeLayout(false);
+            gbAdministracion.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)nupMIncidente).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nupHIncidente).EndInit();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)nupNumeroGuardia).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nupMDuracion).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nupHGuardiaDesde).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nupMGuardiaDesde).EndInit();
+            ResumeLayout(false);
 
         }
 
