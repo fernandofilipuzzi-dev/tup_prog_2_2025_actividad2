@@ -398,6 +398,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Actividad 2 - \"Ana es policia!\"";
             this.groupBox1.ResumeLayout(false);
             this.gbAdministracion.ResumeLayout(false);

@@ -1,40 +1,39 @@
 ﻿
-namespace Actividad2.Models
+namespace Actividad2.Models;
+
+public class Guardia
 {
-    public class Guardia
+    public int HoraDesde { get; set; }
+    public int MinutoDesde { get; set; }
+
+    public int HoraHasta 
+    { 
+        get 
+        {
+            int mins=HoraDesde*60+MinutoDesde+TiempoMinutos;
+            return mins % 60;
+        } 
+    }
+    public int MintoHasta
     {
-        public int HoraDesde { get; set; }
-        public int MinutoDesde { get; set; }
-
-        public int HoraHasta 
-        { 
-            get 
-            {
-                int mins=HoraDesde*60+MinutoDesde+TiempoMinutos;
-                return mins % 60;
-            } 
-        }
-        public int MintoHasta
+        get
         {
-            get
-            {
-                int mins = HoraDesde * 60 + MinutoDesde + TiempoMinutos;
-                return mins / 60;
-            }
+            int mins = HoraDesde * 60 + MinutoDesde + TiempoMinutos;
+            return mins / 60;
         }
+    }
 
-        public int TiempoMinutos { get; set; }
+    public int TiempoMinutos { get; set; }
 
-        public Policia OficialAsignado{get;private set;}
+    public Policia OficialAsignado{get;private set;}
 
-        public Guardia() { }
+    public Guardia() { }
 
-        public void AsignarPolicia(Policia agente, int h, int m, int cantM) 
-        {
-            OficialAsignado = agente;
-            HoraDesde = h; 
-            MinutoDesde=m;
-            TiempoMinutos = cantM;
-        }
+    public void AsignarPolicia(Policia agente, int h, int m, int cantM) 
+    {
+        OficialAsignado = agente;
+        HoraDesde = h; 
+        MinutoDesde=m;
+        TiempoMinutos = cantM;
     }
 }

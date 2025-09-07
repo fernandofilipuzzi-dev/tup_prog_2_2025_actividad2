@@ -1,13 +1,10 @@
-﻿using System;
-using System.Windows.Forms;
+﻿
+namespace Actividad2;
 
-namespace Actividad2
+public partial class FormVerInicidentes : Form
 {
-    public partial class FormVerInicidentes : Form
+    public FormVerInicidentes()
     {
-        public FormVerInicidentes()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }
